@@ -42,6 +42,8 @@
     background-color: #F2F7E5
   &-13
     background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(230, 240, 205, 1) 50%, rgba(255, 255, 255, 1) 100%)
+
+  
   &-info
     background-color: #E8EEFD
   &-sintesis
@@ -246,7 +248,7 @@ $custom-card-img-height: 322px
     line-height: 26.4px !important
     font-weight: 700 !important
   i
-    color: $color-primario !important
+    color: #36CEEF !important
 
 
 .bg-ppal-claro
@@ -340,16 +342,61 @@ $custom-card-img-height: 322px
 
 
 .lista-ul--color li > i:first-of-type
-  color: #453179 !important
+  color: #36CEEF !important
 
 .lista-ul--color.color-dark li > i:first-of-type
-  color: #453179 !important
+  color: #36CEEF !important
           
 
 th.bg-color-tabla
-  background-color: #453179 !important
+  background-color: #36CEEF !important
   color: #fff !important
 
 
 .bordes
   border: 1px solid lightgray !important
+
+.image-out-bg
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0%
+    left: 0
+    width: 100%
+    height: 85%
+    transform: translateY(-0%)
+    background-color: #C1F0FA
+    z-index: 0
+  .col-lg-auto, .col-lg, .row
+    z-index: 1
+
+
+  @media screen and (max-width: bp-max-md)
+    padding: 1rem
+  
+    &::after
+      height: 100%
+
+
+.image-out-bg-2
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0%
+    left: 0
+    width: 100%
+    height: 85%
+    transform: translateY(-0%)
+    background-color: #FFE1B9
+    z-index: 0
+  .col-lg-auto, .col-lg, .row
+    z-index: 1
+
+
+  @media screen and (max-width: bp-max-md)
+    padding: 1rem
+  
+    &::after
+      height: 100%

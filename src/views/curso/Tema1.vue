@@ -1,6 +1,6 @@
 <template lang="pug">
 .curso-main-container.pb-3
-  BannerInterno(:subTitulo="'6. Estructura económica de Colombia'")
+  BannerInterno(:subTitulo="'1. Estructura económica de Colombia'")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.overflow-hidden
 
     .bg-color-4.mb-5(data-aos="fade-up")
@@ -28,7 +28,7 @@
     
 
     #t_6_1.titulo-segundo(data-aos="flip-up")
-      h2 #[span 6.1] Composición de los sectores productivos: primario, secundario y terciario
+      h2 #[span 1.1] Composición de los sectores productivos: primario, secundario y terciario
     
     p.mb-4 La economía colombiana está estructurada en torno a 3 grandes sectores productivos: el primario, el secundario y el terciario. Cada uno de estos sectores agrupa diferentes actividades económicas con características particulares en términos de generación de valor agregado, empleo y participación en el Producto Interno Bruto (PIB). El análisis de esta composición permite identificar la evolución de la economía y las áreas de mayor dinamismo o rezago, así como comprender la especialización regional y los desafíos estructurales del desarrollo económico nacional.
 
@@ -88,7 +88,7 @@
             p.mb-0.text-white Esta disparidad territorial en la estructura económica evidencia los desequilibrios del desarrollo regional y la necesidad de políticas públicas diferenciadas que promuevan el crecimiento equitativo y sostenible en todo el país. 
 
     #t_6_2.titulo-segundo(data-aos="flip-up")
-      h2 #[span 6.2] Aportes al Producto Interno Bruto por sector económico, en el 2024
+      h2 #[span 1.2] Aportes al Producto Interno Bruto por sector económico, en el 2024
     
     p Para el desarrollo de este tema se va a basar en datos del boletín técnico del DANE correspondiente al cuarto trimestre del 2024.
     P.MB-4 El Producto Interno Bruto (PIB) de Colombia, para el año 2024, muestra una dinámica particular en cuanto a los aportes sectoriales. Según el enfoque de la producción, el PIB a precios corrientes presentó un crecimiento del 7,6 % frente al año 2023. Este comportamiento fue impulsado, principalmente, por 3 sectores: administración pública, comercio y agricultura, los cuales representan los mayores aportes al valor agregado de la economía nacional.
@@ -125,7 +125,7 @@
     
        
     #t_6_3.titulo-segundo(data-aos="flip-up")
-      h2 #[span 6.3] Evolución histórica de la estructura económica colombiana
+      h2 #[span 1.3] Evolución histórica de la estructura económica colombiana
     
     p.mb-4 La comprensión del desarrollo económico de un país exige una mirada retrospectiva que permita identificar los cambios estructurales que han dado forma a su sistema productivo.
 

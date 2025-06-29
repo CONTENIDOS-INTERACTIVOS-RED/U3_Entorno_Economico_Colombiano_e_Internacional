@@ -1,6 +1,6 @@
 <template lang="pug">
 .curso-main-container.pb-3
-  BannerInterno(:subTitulo="'7. Política económica colombiana '")
+  BannerInterno(:subTitulo="'3. Política económica colombiana '")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.overflow-hidden
 
     .row.mb-5
@@ -26,8 +26,8 @@
               p.mb-0 No solo permita enfrentar los desafíos internos derivados de la informalidad, la pobreza y el desempleo, sino también adaptarse a los efectos del fenómeno externos como la volatilidad de los precios internacionales, la devaluación de la moneda o las condiciones del comercio global.
     
 
-    #t_7_1.titulo-segundo(data-aos="flip-up")
-      h2 #[span 7.1] Objetivos de la política económica colombiana
+    #t_3_1.titulo-segundo(data-aos="flip-up")
+      h2 #[span 3.1] Objetivos de la política económica colombiana
     
     p.mb-4 En Colombia, la política económica desempeña un papel fundamental en la conducción del desarrollo nacional, porque a través de ella se busca alcanzar un equilibrio entre el crecimiento económico, la estabilidad financiera, el control de la inflación y la generación de empleo. Los objetivos de esta política están orientados a mejorar las condiciones de vida de la población, reducir la pobreza y promover un entorno promovido para la inversión y la competitividad.
 
@@ -66,8 +66,8 @@
           .col-lg-8
             p.mb-0 “Por los años veinte del siglo pasado algunas de las funciones de Banca Central las desarrollaba el Banco López, institución que había sido creada por los dueños de la firma exportadora Pedro A. López y Cía. Algunos historiadores consideran que por una mala interpretación de las comunicaciones de aquella época se divulgó la noticia de que el Banco López estaba en quiebra lo cual ocasionó terror en los cuentahabientes del banco, que por otro lado traían las amargas experiencias de las quiebras bancarias del siglo XIX y comienzos del siglo XX; ello dio origen a que las gentes que tenían sus depósitos en el Banco López acudieron a él en solicitud de la devolución de los depósitos confiados y dice la historia que fue tal la avalancha de solicitudes que fue necesario contratar dos cajeros extras para que atendieran los retiros. El presidente Ospina Vásquez a fin de evitar verdaderamente la quiebra del banco decretó tres días de esta durante los cuales se sancionó la Ley 25 de 1923 la cual dio vida al actual Banco de la República. Finalizadas las fiestas había desaparecido el Banco López ya cambio de él abría las puertas el actual Banco de la República el cual se creó como sociedad anónima emitiendo cuatro tipos de acciones con la siguiente destinación: las acciones de tipo A para el gobierno nacional, las acciones de tipo B para la banca comercial nacional, las acciones de tipo C, para la banca comercial extranjera y las acciones de tipo D para los particulares” (pág. 125).
     
-    #t_7_2.titulo-segundo(data-aos="flip-up")
-      h2 #[span 7.2] Política fiscal en Colombia: ingresos, gastos y deuda pública
+    #t_3_2.titulo-segundo(data-aos="flip-up")
+      h2 #[span 3.2] Política fiscal en Colombia: ingresos, gastos y deuda pública
     
     .row.mb-5
       .col-lg-4.order-lg-2.mb-3.mb-lg-0
@@ -185,8 +185,8 @@
         .bg-color-5.p-4(data-aos="fade-left")
           p.mb-0 Uno de los desafíos más importantes de la política fiscal en Colombia es lograr una mayor progresividad y eficiencia del sistema tributario. Esto implica que quienes tienen más capacidad económica contribuyan en mayor proporción, y que los recursos recaudados se utilicen de manera eficiente y transparente para reducir la pobreza y la desigualdad. Además, se requiere ampliar la base tributaria y combatir la evasión fiscal mediante el fortalecimiento institucional.
     
-    #t_7_3.titulo-segundo(data-aos="flip-up")
-      h2 #[span 7.3] Política monetaria y el papel del Banco de la República
+    #t_3_3.titulo-segundo(data-aos="flip-up")
+      h2 #[span 3.3] Política monetaria y el papel del Banco de la República
     
     p.mb-4 El análisis de la política monetaria permite comprender cómo se regulan variables clave del entorno económico, como la inflación, el crédito y el tipo de cambio, a través de herramientas diseñadas para promover la estabilidad y el crecimiento.
 
@@ -197,7 +197,7 @@
             h2.mb-4(data-aos="flip-up") Política monetaria y el papel del Banco de la República
             p.mb-4(data-aos="fade-right") En el PDF <b>Política monetaria y el papel del Banco de la República</b>, se estudia el rol fundamental de esta institución en la conducción de la economía colombiana, su marco legal, los instrumentos que utiliza para controlar la liquidez y los mecanismos mediante los cuales influye en el comportamiento del sistema financiero. Este contenido ofrece una base sólida para entender cómo las decisiones del banco central impactan la vida cotidiana de los ciudadanos, la inversión y la dinámica de los mercados nacionales e internacionales.
     
-            a.anexo.mb-4.bg-white.w-fit(:href="obtenerLink('/downloads/Anexo_1.pdf')" target="_blank")(data-aos="flip-up")
+            a.anexo.mb-4.bg-white.w-fit(:href="obtenerLink('/downloads/Anexo_3.pdf')" target="_blank")(data-aos="flip-up")
               .anexo__icono(:style="{'background-color': '#FCDFDB'}")
                 img(src="@/assets/template/icono-pdf.svg")
               .anexo__texto
@@ -208,10 +208,6 @@
               img(src='@/assets/curso/tema7/17.png', alt='')
         
 
-    .bg-full-width.border-top.actividad.bg-color-actividad
-      .p-4.p-md-5
-        #Actividad                
-          <Actividad :cuestionario="cuestionario"/>
 
     .bg-full-width.border-top.color-primario
       .p-4.p-md-5
@@ -230,195 +226,3 @@
               img(src='@/assets/componentes/material-complementario.svg', alt='')
 
 </template>
-
-<script>
-import Actividad from '@/components/actividad/Actividad.vue'
-export default {
-  name: 'Tema3',
-  components: {
-    Actividad,
-  },
-  data() {
-    return {
-      cuestionario: {
-        tema: 'Herramientas colaborativas para la construcción de paz',
-        titulo: 'Ponte a prueba',
-        introduccion:
-          'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
-        barajarPreguntas: true,
-        preguntas: [
-          {
-            id: 1,
-            texto:
-              '¿Cuál de los siguientes conceptos explica la necesidad de elegir entre distintas alternativas debido a los recursos limitados?',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Satisfacción total',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Costo de oportunidad ',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Abundancia relativa',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Ley de oferta',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-          {
-            id: 2,
-            texto:
-              '¿Qué pregunta fundamental responde a “¿Para quién producir?” en economía?',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Qué bienes se fabrican',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Quién distribuye los ingresos',
-                esCorrecta: false,
-              },
-              {
-                id: 'c',
-                texto: 'Cómo se asignan los recursos entre los consumidores ',
-                esCorrecta: true,
-              },
-              {
-                id: 'd',
-                texto: 'Cómo medir la riqueza de un país',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-          {
-            id: 3,
-            texto:
-              '¿Cuál de los siguientes factores de producción se refiere al uso de habilidades humanas en la creación de bienes o servicios?',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Tierra',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Capital',
-                esCorrecta: false,
-              },
-              {
-                id: 'c',
-                texto: 'Trabajo ',
-                esCorrecta: true,
-              },
-              {
-                id: 'd',
-                texto: 'Tecnología',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-          {
-            id: 4,
-            texto:
-              '¿Cuál de los siguientes ejemplos pertenece al sector secundario de la economía?',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Cosecha de arroz',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Elaboración de pan en una panadería ',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Enseñanza en colegios',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Transporte público',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-          {
-            id: 5,
-            texto:
-              '¿En qué tipo de sistema económico predomina la propiedad colectiva y la planificación estatal de los recursos?',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Capitalismo',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Socialismo ',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Economía de mercado',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Economía mixta',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-        ],
-        mensaje_final_aprobado:
-          '¡Felicidades! Has superado la prueba con éxito.',
-        mensaje_final_reprobado:
-          'Te recomendamos repasar nuevamente la unidad para reforzar los conceptos clave antes de volver a intentarlo.',
-      },
-    }
-  },
-  mounted() {
-    this.$nextTick(() => {
-      this.$aosRefresh()
-    })
-  },
-}
-</script>
-
-<style lang="sass">
-.bg-color-actividad
-  background-color: #EBF1F5
-</style>
